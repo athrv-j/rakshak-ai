@@ -417,10 +417,10 @@ export default function TrustPassport() {
                     : (isSafe || isUnrelated) ? 'bg-emerald-50 text-emerald-800 border-emerald-300 shadow-xs' 
                     : 'bg-amber-50 text-amber-800 border-amber-300 shadow-xs'
                   }`}>
-                    {isDanger ? '⛔ STOP — HIGH RISK SCAM' 
-                     : isSafe ? '✅ VERIFIED OFFICIAL' 
-                     : isUnrelated ? '✅ SAFE — NO FINANCIAL RISK' 
-                     : '⚠️ BE CAREFUL — UNVERIFIED CLAIMS'}
+                    {isDanger ? t('risk_high') 
+                     : isSafe ? t('risk_low') 
+                     : isUnrelated ? t('risk_low') 
+                     : t('risk_medium')}
                   </span>
                   {analysis.risk_score !== undefined && !isUnrelated && (
                     <span className="text-[11px] font-mono font-bold px-2 py-0.5 rounded-md bg-white border border-slate-300 text-slate-700 shadow-2xs">
@@ -431,21 +431,17 @@ export default function TrustPassport() {
 
                 <h2 className="text-xl sm:text-2xl font-black mt-2 leading-snug tracking-tight text-slate-900">
                   {isDanger
-                    ? 'Do NOT Send Any Money or Share Details'
+                    ? (lang === 'hi' ? 'कोई भी पैसे न भेजें' : lang === 'mr' ? 'कोणतेही पैसे पाठवू नका' : lang === 'te' ? 'డబ్బు పంపవద్దు' : lang === 'ta' ? 'பணம் அனுப்ப வேண்டாம்' : lang === 'gu' ? 'પૈસા મોકલશો નહીં' : lang === 'bn' ? 'টাকা পাঠাবেন না' : lang === 'pa' ? 'ਪੈਸੇ ਨਾ ਭੇਜੋ' : 'Do NOT Send Any Money or Share Details')
                     : isSafe
-                    ? 'This Communication Appears Legitimate'
+                    ? (lang === 'hi' ? 'यह संदेश सत्यापित और सुरक्षित है' : lang === 'mr' ? 'हा संदेश अधिकृत आणि सुरक्षित आहे' : lang === 'te' ? 'ఈ సమాచారం సురక్షితమైనది' : lang === 'ta' ? 'இந்த செய்தி பாதுகாப்பானது' : 'This Communication Appears Legitimate')
                     : isUnrelated
-                    ? 'No Financial Scam or Threat Detected'
-                    : 'Suspicious Claims Detected — Verify First'}
+                    ? (lang === 'hi' ? 'कोई वित्तीय खतरा नहीं मिला' : lang === 'mr' ? 'कोणताही आर्थिक धोका नाही' : lang === 'te' ? 'ఆర్థిక మోసం లేదు' : 'No Financial Scam or Threat Detected')
+                    : (lang === 'hi' ? 'संदिग्ध दावे मिले — पहले जांचें' : lang === 'mr' ? 'संशयास्पद दावे — आधी तपासा' : lang === 'te' ? 'అనుమానాస్పద సందేశం' : 'Suspicious Claims Detected — Verify First')}
                 </h2>
                 <p className="text-sm font-medium mt-1.5 text-slate-700 leading-relaxed max-w-xl">
-                  {isDanger
-                    ? 'This message contains classic hallmarks of an investment fraud. Genuine financial institutions never collect money into personal accounts.'
-                    : isSafe
-                    ? 'Official registration and sender information match verified regulatory records.'
-                    : isUnrelated
-                    ? (analysis.english_summary || 'This message is casual conversation or unrelated to financial transactions. No investment promises, payment demands, or scam tactics were found.')
-                    : 'This sender makes unverified promises or cannot be found in official SEBI databases.'}
+                  {(REGIONAL_SPEECH_SCRIPTS[lang] || REGIONAL_SPEECH_SCRIPTS.en)[
+                    isUnrelated ? 'unrelated' : isDanger ? 'danger' : isSafe ? 'safe' : 'warning'
+                  ]}
                 </p>
               </div>
             </div>

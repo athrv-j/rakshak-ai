@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { Globe2, ChevronDown, Check } from 'lucide-react'
 import { useLanguage, LANGUAGES } from '../context/LanguageContext'
+import toast from 'react-hot-toast'
 
 export default function LanguageSelector({ variant = 'navbar' }) {
   const { lang, setLang, currentLanguage } = useLanguage()
@@ -44,19 +45,23 @@ export default function LanguageSelector({ variant = 'navbar' }) {
           <div className="max-h-80 overflow-y-auto py-1 divide-y divide-stone-100">
             {LANGUAGES.map((l) => {
               const isSelected = l.code === lang
+              const handleSelect = (e) => {
+                e.preventDefault()
+                e.stopPropagation()
+                setLang(l.code)
+                setOpen(false)
+                toast.success(`Language changed to ${l.native} (${l.name})`, { id: 'lang-toast', duration: 2000 })
+              }
               return (
                 <button
                   type="button"
                   key={l.code}
-                  onMouseDown={(e) => {
-                    e.preventDefault()
-                    setLang(l.code)
-                    setOpen(false)
-                  }}
+                  onClick={handleSelect}
+                  onMouseDown={handleSelect}
                   className={`w-full text-left px-3.5 py-2.5 flex items-center justify-between text-xs transition-colors cursor-pointer ${
                     isSelected
-                      ? 'bg-brand-50 text-brand-700 font-bold'
-                      : 'text-stone-700 hover:bg-stone-50 hover:text-stone-900'
+                      ? 'bg-orange-50 text-orange-700 font-bold'
+                      : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'
                   }`}
                 >
                   <div className="flex items-center gap-2.5">

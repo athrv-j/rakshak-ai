@@ -128,17 +128,17 @@ export default function Home() {
           <motion.div variants={fadeUp} className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-orange-200 bg-orange-50 text-orange-700 text-xs font-bold mb-6 shadow-xs backdrop-blur-md">
             <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
             <Shield className="w-3.5 h-3.5 text-orange-600" />
-            <span>AI Cyber Financial Defense & Scam Intelligence Firewall</span>
+            <span>{t('hero_badge')}</span>
           </motion.div>
 
           <motion.h1 variants={fadeUp} className="text-4xl sm:text-6xl lg:text-7xl font-black leading-[1.08] mb-5 tracking-tight text-slate-900">
-            <span className="drop-shadow-xs">Before you trust it,</span>
+            <span className="drop-shadow-xs">{t('hero_title_1')}</span>
             <br />
-            <span className="gradient-text drop-shadow-[0_4px_24px_rgba(249,115,22,0.2)]">Rakshak checks it.</span>
+            <span className="gradient-text drop-shadow-[0_4px_24px_rgba(249,115,22,0.2)]">{t('hero_title_2')}</span>
           </motion.h1>
 
           <motion.p variants={fadeUp} className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto mb-5 leading-relaxed font-normal">
-            Upload any suspicious WhatsApp forward, Telegram tip, QR code, or investment claim. Rakshak cross-examines official <strong className="text-emerald-700 font-semibold">SEBI registries</strong>, reveals hidden <strong className="text-red-600 font-semibold">scam syndicate DNA</strong>, and protects your hard-earned money.
+            {t('hero_desc')}
           </motion.p>
 
           {/* Interactive 3D Financial Protection Core */}
@@ -224,8 +224,8 @@ export default function Home() {
             {/* Tab bar */}
             <div className="flex border-b border-slate-200 bg-slate-50/90 p-2 gap-2">
               {[
-                ['text', Type, 'Paste Message / Claim'],
-                ['image', ImageIcon, 'Upload Screenshot / QR'],
+                ['text', Type, t('tab_text')],
+                ['image', ImageIcon, t('tab_image')],
               ].map(([key, Icon, label]) => (
                 <button
                   key={key}
@@ -250,7 +250,7 @@ export default function Home() {
                       <textarea
                         value={text}
                         onChange={e => setText(e.target.value)}
-                        placeholder="Paste a suspicious WhatsApp forward, Telegram tip, investment link, or financial claim here..."
+                        placeholder={t('placeholder_text')}
                         rows={6}
                         className="w-full bg-slate-50 rounded-2xl p-4 border border-slate-200 text-slate-900 placeholder-slate-400 resize-none focus:outline-none focus:ring-2 focus:ring-orange-500/20 focus:border-orange-500 text-sm leading-relaxed transition-all shadow-inner font-sans focus:bg-white"
                       />
@@ -331,8 +331,8 @@ export default function Home() {
                         <div className="w-12 h-12 rounded-xl bg-orange-50 border border-orange-200 flex items-center justify-center mx-auto mb-3 shadow-xs">
                           <Upload className="w-6 h-6 text-orange-600" />
                         </div>
-                        <p className="text-slate-800 font-bold text-sm">Click to upload or drag screenshot here</p>
-                        <p className="text-slate-500 text-xs mt-1">Supports PNG, JPG, WebP · WhatsApp, Telegram, SMS screenshots</p>
+                        <p className="text-slate-800 font-bold text-sm">{t('drop_title')}</p>
+                        <p className="text-slate-500 text-xs mt-1">{t('drop_sub')}</p>
                         <input ref={fileRef} type="file" accept="image/*" className="hidden"
                           onChange={e => e.target.files[0] && handleFileSelect(e.target.files[0])} />
                       </div>
@@ -364,7 +364,7 @@ export default function Home() {
                   className="flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-600 via-orange-500 to-amber-600 hover:from-orange-500 hover:to-amber-500 disabled:opacity-40 disabled:cursor-not-allowed text-white rounded-xl font-bold text-sm transition-all shadow-md shadow-orange-500/20 hover:scale-[1.02] active:scale-[0.98] border border-orange-500/30 cursor-pointer"
                 >
                   <Search className="w-4 h-4" />
-                  <span>Check Message Now · सुरक्षित जांचें</span>
+                  <span>{t('btn_scan_now')}</span>
                   <ChevronRight className="w-4 h-4" />
                 </button>
               </div>
