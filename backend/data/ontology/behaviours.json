@@ -1,0 +1,213 @@
+{
+  "ontology_name": "Rakshak Scam DNA Behavioral Ontology",
+  "version": "2.0.0",
+  "reference_framework": "SEBI Fake Trading App Scam Landscape & Social Media Fraud Orders (2023-2026)",
+  "stages": [
+    {
+      "stage_id": 1,
+      "stage_name": "Social Media Hook & Lure",
+      "description": "Initial targeting via algorithmic feeds to attract inexperienced investors.",
+      "behaviours": [
+        {
+          "code": "DNA_HOOK_LUXURY_LIFESTYLE",
+          "name": "Luxury Lifestyle Flexing",
+          "severity": "MEDIUM",
+          "description": "Exhibiting rented supercars, stacks of cash, or luxury watches to manufacture the illusion of effortless market riches."
+        },
+        {
+          "code": "DNA_HOOK_CELEB_DEEPFAKE",
+          "name": "Celebrity / Authority Deepfake",
+          "severity": "CRITICAL",
+          "description": "Synthetically manipulated video/audio impersonating prominent corporate leaders or ministers endorsing secret investment pools."
+        },
+        {
+          "code": "DNA_HOOK_ALGO_BOT_EXPLOIT",
+          "name": "Zero-Loss Algo Trading Bot",
+          "severity": "HIGH",
+          "description": "Marketing proprietary AI or algorithmic bot software promising consistent daily returns with zero drawdowns."
+        },
+        {
+          "code": "DNA_HOOK_INSIDER_LEAK",
+          "name": "Institutional / Insider Tip Claim",
+          "severity": "CRITICAL",
+          "description": "Claiming access to confidential institutional block deals, pre-IPO allotments, or insider SEBI tip sheets."
+        }
+      ]
+    },
+    {
+      "stage_id": 2,
+      "stage_name": "Trust Grooming & Authority Hijacking",
+      "description": "Fabricating regulatory compliance to neutralize investor skepticism.",
+      "behaviours": [
+        {
+          "code": "DNA_FORGED_SEBI_CERT",
+          "name": "Forged SEBI Registration Certificate",
+          "severity": "CRITICAL",
+          "description": "Presenting photoshopped SEBI certificates featuring fictitious or stolen RIA/RA registration numbers."
+        },
+        {
+          "code": "DNA_IMPERSONATION_REG_BROKER",
+          "name": "Broker Brand Impersonation",
+          "severity": "CRITICAL",
+          "description": "Operating under lookalike names, logos, and typography mimicking reputed brokers like Zerodha, Groww, ICICI Direct, or Tata Capital."
+        },
+        {
+          "code": "DNA_EDUCATIONAL_FRONT",
+          "name": "Deceptive Literacy Masterclass",
+          "severity": "MEDIUM",
+          "description": "Framing paid stock tipping operations as a 'Free Investor Awareness Webinar' or educational charity drive."
+        },
+        {
+          "code": "DNA_SHILL_COMMUNITY_PROOF",
+          "name": "Coordinated Social Shill Reviews",
+          "severity": "HIGH",
+          "description": "Coordinated bot networks posting identical testimonial screenshots of multi-lakh bank credits in chat channels."
+        }
+      ]
+    },
+    {
+      "stage_id": 3,
+      "stage_name": "Unrealistic Return Claims & Scarcity Tactics",
+      "description": "Manipulating investor psychology through irrational exuberance and artificial urgency.",
+      "behaviours": [
+        {
+          "code": "DNA_GUARANTEED_ROI",
+          "name": "Guaranteed / Assured Return Promise",
+          "severity": "CRITICAL",
+          "description": "Promising fixed percentage returns (e.g., 200% monthly, 5% daily), in direct violation of SEBI PFUTP Regulations."
+        },
+        {
+          "code": "DNA_ARTIFICIAL_URGENCY",
+          "name": "Artificial Scarcity & Countdown",
+          "severity": "HIGH",
+          "description": "Pressuring targets with claims that 'VIP registration closes in 2 hours' or 'Only 3 institutional seats remaining'."
+        },
+        {
+          "code": "DNA_ZERO_RISK_CLAIM",
+          "name": "Zero Capital Risk / 100% Protection",
+          "severity": "CRITICAL",
+          "description": "False assertions that capital is 100% insured against downside market volatility."
+        }
+      ]
+    },
+    {
+      "stage_id": 4,
+      "stage_name": "Unverified App & Off-Exchange Onboarding",
+      "description": "Bypassing regulated digital app stores and official exchange clearing pipelines.",
+      "behaviours": [
+        {
+          "code": "DNA_UNOFFICIAL_APK_LINK",
+          "name": "Direct Sideloaded APK Link",
+          "severity": "CRITICAL",
+          "description": "Directing victims to install Android APK files via Telegram/WhatsApp or obscure download domains not audited by Google Play Protect."
+        },
+        {
+          "code": "DNA_PERSONAL_UPI_ROUTING",
+          "name": "Personal UPI Handle Payment Request",
+          "severity": "CRITICAL",
+          "description": "Demanding deposit of trading capital to individual UPI handles (@okaxis, @ybl, @paytm) or mule current accounts rather than registered broker escrows."
+        },
+        {
+          "code": "DNA_REMOTE_DESKTOP_ACCESS",
+          "name": "Remote Access Software Installation",
+          "severity": "CRITICAL",
+          "description": "Asking victims to install screen-sharing software (AnyDesk, TeamViewer) under the guise of 'KYC assistance'."
+        }
+      ]
+    },
+    {
+      "stage_id": 5,
+      "stage_name": "Manipulated Virtual Profit Display",
+      "description": "Generating fictitious paper wealth to prime the victim for larger capital infusion.",
+      "behaviours": [
+        {
+          "code": "DNA_MANIPULATED_VIRTUAL_DASHBOARD",
+          "name": "Simulated Portfolio Gains",
+          "severity": "HIGH",
+          "description": "Displaying fabricated high-frequency trading balances and charts entirely detached from live NSE/BSE matching engines."
+        },
+        {
+          "code": "DNA_ZERO_EXCHANGE_CONFIRMATION",
+          "name": "Absence of Official Exchange Contract Notes",
+          "severity": "CRITICAL",
+          "description": "No Unique Client Code (UCC) registration, no daily exchange SMS alerts, and no CDSL/NSDL transaction statements."
+        },
+        {
+          "code": "DNA_MICRO_WITHDRAWAL_BAIT",
+          "name": "Micro-Withdrawal Baiting",
+          "severity": "HIGH",
+          "description": "Allowing an initial small withdrawal (₹1,000 - ₹3,000) to dissolve victim doubt and elicit multi-lakh deposits."
+        }
+      ]
+    },
+    {
+      "stage_id": 6,
+      "stage_name": "Aggressive Capital Escalation & Leverage Traps",
+      "description": "Pressuring victims to exhaust savings or take loans to participate in illusory elite rounds.",
+      "behaviours": [
+        {
+          "code": "DNA_MANDATORY_TIER_UPGRADE",
+          "name": "Mandatory Capital Doubling for VIP Tier",
+          "severity": "HIGH",
+          "description": "Compelling victim to deposit additional capital to prevent existing trades from being closed or penalized."
+        },
+        {
+          "code": "DNA_LOAN_SOLICITATION",
+          "name": "Personal Loan / Asset Liquidation Coercion",
+          "severity": "CRITICAL",
+          "description": "Advising investors to break fixed deposits, liquidate mutual funds, or take instant personal loans to maximize profits."
+        }
+      ]
+    },
+    {
+      "stage_id": 7,
+      "stage_name": "Withdrawal Freeze & Extortion Trap",
+      "description": "Blocking fund repatriation and demanding fraudulent fees under regulatory disguises.",
+      "behaviours": [
+        {
+          "code": "DNA_CAPITAL_GAINS_TAX_DEMAND",
+          "name": "Advance Capital Gains Tax Extortion",
+          "severity": "CRITICAL",
+          "description": "Demanding that 20%-30% tax be paid in advance via UPI before withdrawals can be processed, which is contrary to Indian tax deduction laws."
+        },
+        {
+          "code": "DNA_REGULATORY_CLEARANCE_FEE",
+          "name": "Bogus SEBI / RBI Clearance Fee",
+          "severity": "CRITICAL",
+          "description": "Fabricating notices stating SEBI or RBI has frozen the funds until an administrative fee or anti-money-laundering bond is paid."
+        },
+        {
+          "code": "DNA_FROZEN_ACCOUNT_LEGAL_THREAT",
+          "name": "Legal Prosecution & Blackmail Threat",
+          "severity": "CRITICAL",
+          "description": "Threatening victim with police cyber arrest, tax audit raids, or credit score destruction if balance is not paid immediately."
+        }
+      ]
+    },
+    {
+      "stage_id": 8,
+      "stage_name": "Scam Liquidation & Secondary Exploitation",
+      "description": "Covering tracks, purging community channels, and deploying secondary recovery scams.",
+      "behaviours": [
+        {
+          "code": "DNA_COMMUNITY_PURGE",
+          "name": "Victim Ejection & Channel Purge",
+          "severity": "HIGH",
+          "description": "Banning questioning members from the group, deleting chat histories, and wiping admin profiles."
+        },
+        {
+          "code": "DNA_IDENTITY_MIGRATION",
+          "name": "Dynamic Alias & Handle Migration",
+          "severity": "HIGH",
+          "description": "Renaming group handles, re-registering fresh domain landing pages, and switching to backup UPI VPIs."
+        },
+        {
+          "code": "DNA_RE_RECOVERY_SCAM",
+          "name": "Secondary Cyber Recovery Impersonation",
+          "severity": "CRITICAL",
+          "description": "Approaching defrauded victims disguised as SEBI ombudsmen, legal advocates, or ethical hackers claiming to recover lost money for an advance fee."
+        }
+      ]
+    }
+  ]
+}

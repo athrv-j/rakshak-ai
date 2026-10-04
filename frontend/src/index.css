@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: #f8fafc;
+  --surface-subtle: #f1f5f9;
+  --card: #ffffff;
+  --card-subtle: #f8fafc;
+  --muted: #e2e8f0;
+  --border: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --brand: #ea580c;
+  --danger: #dc2626;
+  --warning: #d97706;
+  --safe: #059669;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  min-height: 100%;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc !important;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Background Cyber Grid Pattern (Light Theme) */
+.cyber-grid {
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* High-tech HUD corner brackets for light theme */
+.cyber-bracket {
+  position: relative;
+}
+.cyber-bracket::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 14px;
+  height: 14px;
+  border-top: 2px solid #ea580c;
+  border-left: 2px solid #ea580c;
+  border-top-left-radius: 6px;
+  pointer-events: none;
+}
+.cyber-bracket::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 14px;
+  height: 14px;
+  border-bottom: 2px solid #ea580c;
+  border-right: 2px solid #ea580c;
+  border-bottom-right-radius: 6px;
+  pointer-events: none;
+}
+
+/* Fallback utilities */
+.bg-surface { background-color: #f8fafc !important; }
+.bg-surface-subtle { background-color: #f1f5f9 !important; }
+.bg-card { background-color: #ffffff !important; }
+.bg-card-subtle { background-color: #f8fafc !important; }
+.border-cardBorder { border-color: #e2e8f0 !important; }
+.text-ink-primary { color: #0f172a !important; }
+.text-ink-secondary { color: #475569 !important; }
+.text-ink-muted { color: #64748b !important; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 7px; height: 7px; }
+::-webkit-scrollbar-track { background: #f8fafc; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; border: 1px solid #e2e8f0; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* Glass card — Light Frosted Glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.05), 0 1px 3px rgba(15, 23, 42, 0.02);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #c2410c 0%, #ea580c 45%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Risk badge */
+.risk-high   { @apply bg-red-50 text-red-700 border border-red-200 font-semibold; }
+.risk-medium { @apply bg-amber-50 text-amber-700 border border-amber-200 font-semibold; }
+.risk-low    { @apply bg-emerald-50 text-emerald-700 border border-emerald-200 font-semibold; }
+
+/* Pulse ring for high risk */
+.pulse-ring {
+  animation: pulseRing 2s ease-out infinite;
+}
+@keyframes pulseRing {
+  0% { box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.3); }
+  70% { box-shadow: 0 0 0 14px rgba(234, 88, 12, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(234, 88, 12, 0); }
+}
+
+/* Hindi font class */
+.font-hindi { font-family: 'Noto Sans Devanagari', sans-serif; }
+
+/* Upload drop zone */
+.drop-zone {
+  border: 2px dashed #dcd6cb;
+  background: rgba(255, 255, 255, 0.7);
+  transition: all 0.25s ease;
+}
+.drop-zone:hover, .drop-zone.active {
+  border-color: var(--brand);
+  background: rgba(234, 88, 12, 0.04);
+}
+
+/* Step progress */
+.step-active { @apply text-brand-600 border-brand-600 bg-brand-50; }
+.step-done   { @apply text-emerald-700 border-emerald-500 bg-emerald-50; }
+.step-idle   { @apply text-stone-400 border-stone-300 bg-stone-100; }
+
+/* Node colors for graph legend */
+.node-case    { color: #f97316; }
+.node-upi     { color: #ef4444; }
+.node-phone   { color: #a78bfa; }
+.node-domain  { color: #38bdf8; }
+.node-social  { color: #34d399; }
+.node-current { color: #fbbf24; }
+
+/* Focus ring — accessible keyboard navigation */
+*:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Selection highlight */
+::selection {
+  background: rgba(234, 88, 12, 0.15);
+  color: var(--text-primary);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Mobile viewport fix */
+@supports (height: 100dvh) {
+  .min-h-screen { min-height: 100dvh; }
+}
+
+/* Skeleton loading shimmer */
+.skeleton {
+  background: linear-gradient(90deg, #f1ede4 25%, #faf8f5 50%, #f1ede4 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Subtle card hover lift */
+.card-hover {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -8px rgba(28, 25, 23, 0.12), 0 4px 12px -4px rgba(28, 25, 23, 0.06);
+}
+
+/* High-Impact Alert Glows */
+.alert-glow-danger {
+  box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.3), 0 8px 30px -4px rgba(239, 68, 68, 0.18);
+  animation: dangerPulse 2.8s ease-in-out infinite;
+}
+@keyframes dangerPulse {
+  0%, 100% { box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.35), 0 8px 30px -4px rgba(239, 68, 68, 0.2); }
+  50% { box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.55), 0 12px 36px -2px rgba(239, 68, 68, 0.32); }
+}
+
+.alert-glow-safe {
+  box-shadow: 0 0 0 1px rgba(16, 185, 129, 0.3), 0 8px 30px -4px rgba(16, 185, 129, 0.15);
+}
+
+.alert-glow-warning {
+  box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.35), 0 8px 30px -4px rgba(245, 158, 11, 0.18);
+}
+
+/* Holographic Shimmer Foil */
+.hologram-border {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.4), rgba(217, 119, 6, 0.2), rgba(168, 85, 247, 0.3), rgba(249, 115, 22, 0.4));
+  background-size: 300% 300%;
+  animation: holoShift 6s ease infinite;
+}
+@keyframes holoShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Radar Scanline for forensic investigation */
+.radar-scanline {
+  position: relative;
+  overflow: hidden;
+}
+.radar-scanline::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(234, 88, 12, 0.8), transparent);
+  animation: scanline 2.2s linear infinite;
+  box-shadow: 0 0 8px rgba(234, 88, 12, 0.6);
+}
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(500px); }
+}
+
+/* Highlight Pill Badge */
+.highlight-badge-danger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  background-color: #fef2f2;
+  border: 1px solid #fca5a5;
+  color: #b91c1c;
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 1px 2px 0 rgba(239, 68, 68, 0.08);
+}
+
+.highlight-badge-warning {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  background-color: #fffbeb;
+  border: 1px solid #fcd34d;
+  color: #b45309;
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 1px 2px 0 rgba(245, 158, 11, 0.08);
+}
+
+.highlight-badge-safe {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  background-color: #ecfdf5;
+  border: 1px solid #6ee7b7;
+  color: #047857;
+  font-weight: 700;
+  border-radius: 9999px;
+  box-shadow: 0 1px 2px 0 rgba(16, 185, 129, 0.08);
+}
+
+

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "hn-001",
+    "name": "Zerodha Daily Nifty Market Analysis",
+    "text": "Daily Market Update: Nifty closed at 24,500 (+0.4%). Mutual funds investments are subject to market risks, read all scheme related documents carefully. Registered SEBI Stock Broker: INZ000031633. Verify at zerodha.com.",
+    "expected_risk": "low",
+    "expected_max_score": 15,
+    "category": "Legitimate SEBI Registered Broker Communication",
+    "verified_intermediary": "Zerodha Broking Limited",
+    "verified_reg_no": "INZ000031633",
+    "source": "Zerodha Official Market Bulletin"
+  },
+  {
+    "id": "hn-002",
+    "name": "AMFI Investor Education Campaign",
+    "text": "Mutual Funds Sahi Hai: Start a SIP with as low as ₹500/month. Past performance is not an indicator of future returns. Check AMFI registered distributors at amfiindia.com before investing.",
+    "expected_risk": "low",
+    "expected_max_score": 10,
+    "category": "Regulated Investor Education",
+    "verified_intermediary": "Association of Mutual Funds in India (AMFI)",
+    "verified_reg_no": "ARN-0001",
+    "source": "AMFI Public Awareness Initiative"
+  },
+  {
+    "id": "hn-003",
+    "name": "Groww SIP Confirmation & KYC Alert",
+    "text": "Your monthly SIP of ₹2,000 in Parag Parikh Flexi Cap Fund has been successfully executed on BSE StAR MF. Demat units will reflect in your account within T+1 days. Nextbillion Technology Pvt Ltd (SEBI Reg: INZ000301838).",
+    "expected_risk": "low",
+    "expected_max_score": 10,
+    "category": "Legitimate Transaction Confirmation",
+    "verified_intermediary": "Nextbillion Technology Private Limited (Groww)",
+    "verified_reg_no": "INZ000301838",
+    "source": "Groww In-App Transaction Statement"
+  },
+  {
+    "id": "hn-004",
+    "name": "ICICI Direct Research Equity Report",
+    "text": "Equity Research Report: We initiate coverage on Tata Motors with a BUY recommendation and target price of ₹1,080 over a 12-month horizon based on EV volume trajectory. Disclaimer: Investment in securities market is subject to market risks. ICICI Securities Ltd, SEBI Reg No. INZ000183631. Research Analyst: INH000000990.",
+    "expected_risk": "low",
+    "expected_max_score": 15,
+    "category": "Compliant Research Analyst Recommendation",
+    "verified_intermediary": "ICICI Securities Limited",
+    "verified_reg_no": "INZ000183631",
+    "source": "ICICI Direct Institutional Research"
+  },
+  {
+    "id": "hn-005",
+    "name": "NSE Official Contract Note Email Notification",
+    "text": "NSE Trade Confirmation: UCC: ABCD1234. Trade Date: 28-MAR-2026. 50 Qty of RELIANCE bought at ₹2,980.00. STT and exchange turnover charges applicable. Direct verification available on nseindia.com with your PAN.",
+    "expected_risk": "low",
+    "expected_max_score": 5,
+    "category": "Official Exchange Settlement Notice",
+    "verified_intermediary": "National Stock Exchange of India",
+    "verified_reg_no": "NSE-MEMBER-CLEARING",
+    "source": "NSE Trade Verification Service"
+  },
+  {
+    "id": "hn-006",
+    "name": "HDFC Securities Tax-Saving Advisory",
+    "text": "Plan your tax saving under Section 80C with ELSS Mutual Funds before March 31st. Investments carry a 3-year lock-in period. Visit hdfcsec.com to view risk-o-meter ratings. HDFC Securities Limited, SEBI Reg. INZ000186937.",
+    "expected_risk": "low",
+    "expected_max_score": 15,
+    "category": "Compliant Financial Planning",
+    "verified_intermediary": "HDFC Securities Limited",
+    "verified_reg_no": "INZ000186937",
+    "source": "HDFC Securities Wealth Advisory"
+  }
+]

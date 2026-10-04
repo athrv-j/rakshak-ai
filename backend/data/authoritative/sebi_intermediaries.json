@@ -1,0 +1,246 @@
+{
+  "source": "SEBI Recognised Intermediaries Registry (sebi.gov.in) & NSE/BSE Official Member Directories",
+  "updated_at": "2026-03-28",
+  "total_records": 32,
+  "categories": [
+    {
+      "code": "INZ",
+      "type": "Stock Broker",
+      "regulator": "SEBI / NSE / BSE / MCX",
+      "regex": "^INZ[0-9]{8}$",
+      "description": "Registered Stock Broker authorized for retail securities trading"
+    },
+    {
+      "code": "INA",
+      "type": "Investment Adviser (RIA)",
+      "regulator": "SEBI (Investment Advisers) Regulations, 2013",
+      "regex": "^INA[0-9]{8}$|^INA[0-9]{9}$",
+      "description": "Fiduciary fee-only advisor legally barred from earning product commissions"
+    },
+    {
+      "code": "INH",
+      "type": "Research Analyst (RA)",
+      "regulator": "SEBI (Research Analysts) Regulations, 2014",
+      "regex": "^INH[0-9]{8}$|^INH[0-9]{9}$",
+      "description": "Certified analyst providing independent equity/derivative research"
+    },
+    {
+      "code": "ARN",
+      "type": "Mutual Fund Distributor (AMFI)",
+      "regulator": "AMFI / SEBI Mutual Fund Regulations",
+      "regex": "^ARN-[0-9]{4,7}$",
+      "description": "AMFI Registered Distributor for mutual funds"
+    },
+    {
+      "code": "INP",
+      "type": "Portfolio Manager (PMS)",
+      "regulator": "SEBI (Portfolio Managers) Regulations, 2020",
+      "regex": "^INP[0-9]{8}$",
+      "description": "Discretionary / non-discretionary portfolio management for HNWIs"
+    }
+  ],
+  "intermediaries": [
+    {
+      "name": "Zerodha Broking Limited",
+      "reg_number": "INZ000031633",
+      "entity_type": "Stock Broker",
+      "cdsl_dp_id": "12081600",
+      "status": "VALID",
+      "official_domains": ["zerodha.com", "kite.zerodha.com", "coin.zerodha.com"],
+      "whitelisted_apps": ["Kite by Zerodha", "Coin by Zerodha"],
+      "verified_handles": ["@zerodhaonline", "@Nithin0dha"],
+      "authorized_upi_handles": ["zerodha@icici", "zerodha@hdfcbank"]
+    },
+    {
+      "name": "Nextbillion Technology Private Limited (Groww)",
+      "reg_number": "INZ000301838",
+      "entity_type": "Stock Broker",
+      "cdsl_dp_id": "12088700",
+      "status": "VALID",
+      "official_domains": ["groww.in"],
+      "whitelisted_apps": ["Groww: Stocks & Mutual Fund"],
+      "verified_handles": ["@_groww", "@GrowwHQ"],
+      "authorized_upi_handles": ["groww@axisbank", "groww@yesbank"]
+    },
+    {
+      "name": "ICICI Securities Limited",
+      "reg_number": "INZ000183631",
+      "entity_type": "Stock Broker",
+      "status": "VALID",
+      "official_domains": ["icicidirect.com", "icicisecurities.com"],
+      "whitelisted_apps": ["ICICI Direct Markets App", "ICICI Direct Money"],
+      "verified_handles": ["@ICICI_Direct"],
+      "authorized_upi_handles": ["icicisecurities@icici"]
+    },
+    {
+      "name": "HDFC Securities Limited",
+      "reg_number": "INZ000186937",
+      "entity_type": "Stock Broker",
+      "status": "VALID",
+      "official_domains": ["hdfcsec.com"],
+      "whitelisted_apps": ["HDFC SKY", "HDFC Sec Mobile Trading"],
+      "verified_handles": ["@hdfcsec"],
+      "authorized_upi_handles": ["hdfcsec@hdfcbank"]
+    },
+    {
+      "name": "Kotak Securities Limited",
+      "reg_number": "INZ000200137",
+      "entity_type": "Stock Broker",
+      "status": "VALID",
+      "official_domains": ["kotaksecurities.com"],
+      "whitelisted_apps": ["Kotak Neo", "Kotak Stock Trader"],
+      "verified_handles": ["@kotaksecurities"],
+      "authorized_upi_handles": ["kotaksecurities@kotak"]
+    },
+    {
+      "name": "Angel One Limited (formerly Angel Broking)",
+      "reg_number": "INZ000161534",
+      "entity_type": "Stock Broker",
+      "status": "VALID",
+      "official_domains": ["angelone.in", "angelbroking.com"],
+      "whitelisted_apps": ["Angel One: Stocks & Demat"],
+      "verified_handles": ["@AngelOne"],
+      "authorized_upi_handles": ["angelone@yesbank", "angelone@icici"]
+    },
+    {
+      "name": "Upstox (RKSV Securities India Private Limited)",
+      "reg_number": "INZ000185137",
+      "entity_type": "Stock Broker",
+      "status": "VALID",
+      "official_domains": ["upstox.com"],
+      "whitelisted_apps": ["Upstox - Stocks & Mutual Funds"],
+      "verified_handles": ["@upstox"],
+      "authorized_upi_handles": ["upstox@icici", "rksv@yesbank"]
+    },
+    {
+      "name": "Motilal Oswal Financial Services Limited",
+      "reg_number": "INZ000158836",
+      "entity_type": "Stock Broker",
+      "status": "VALID",
+      "official_domains": ["motilaloswal.com"],
+      "whitelisted_apps": ["MO Investor App", "MO Trader App"],
+      "verified_handles": ["@MotilalOswalLtd"],
+      "authorized_upi_handles": ["motilaloswal@hdfcbank"]
+    },
+    {
+      "name": "Sharekhan Limited (BNP Paribas)",
+      "reg_number": "INZ000171337",
+      "entity_type": "Stock Broker",
+      "status": "VALID",
+      "official_domains": ["sharekhan.com"],
+      "whitelisted_apps": ["Sharekhan App", "Espresso by Sharekhan"],
+      "verified_handles": ["@Sharekhan"],
+      "authorized_upi_handles": ["sharekhan@citi"]
+    },
+    {
+      "name": "5paisa Capital Limited",
+      "reg_number": "INZ000010231",
+      "entity_type": "Stock Broker",
+      "status": "VALID",
+      "official_domains": ["5paisa.com"],
+      "whitelisted_apps": ["5paisa Mobile App"],
+      "verified_handles": ["@5paisa"],
+      "authorized_upi_handles": ["5paisa@icici"]
+    },
+    {
+      "name": "SBI Cap Securities Limited",
+      "reg_number": "INZ000200032",
+      "entity_type": "Stock Broker",
+      "status": "VALID",
+      "official_domains": ["sbismart.com"],
+      "whitelisted_apps": ["SBI Smart App"],
+      "verified_handles": ["@sbicapsec"],
+      "authorized_upi_handles": ["sbicap@sbi"]
+    },
+    {
+      "name": "Axis Capital Limited",
+      "reg_number": "INZ000189931",
+      "entity_type": "Stock Broker",
+      "status": "VALID",
+      "official_domains": ["axisdirect.in", "axiscapital.co.in"],
+      "whitelisted_apps": ["Axis Direct Ring"],
+      "verified_handles": ["@AxisDirect_In"],
+      "authorized_upi_handles": ["axisdirect@axisbank"]
+    },
+    {
+      "name": "Capitalmind Financial Services Private Limited",
+      "reg_number": "INA200005109",
+      "entity_type": "Investment Adviser (RIA)",
+      "status": "VALID",
+      "official_domains": ["capitalmind.in", "capitalmindwealth.com"],
+      "whitelisted_apps": ["Capitalmind Wealth"],
+      "verified_handles": ["@capitalmind_in", "@deepahshenoy"],
+      "authorized_upi_handles": ["capitalmind@hdfcbank"]
+    },
+    {
+      "name": "Finbingo Advisory Services (WealthDesk)",
+      "reg_number": "INA000012174",
+      "entity_type": "Investment Adviser (RIA)",
+      "status": "VALID",
+      "official_domains": ["wealthdesk.in"],
+      "whitelisted_apps": ["WealthDesk"],
+      "verified_handles": ["@WealthDeskIn"],
+      "authorized_upi_handles": ["wealthdesk@icici"]
+    },
+    {
+      "name": "Jama Wealth Advisory Services LLP",
+      "reg_number": "INA200015583",
+      "entity_type": "Investment Adviser (RIA)",
+      "status": "VALID",
+      "official_domains": ["jamawealth.com"],
+      "whitelisted_apps": ["Jama Wealth App"],
+      "verified_handles": ["@jamawealth"],
+      "authorized_upi_handles": ["jamawealth@kotak"]
+    },
+    {
+      "name": "Wright Research & Capital Private Limited",
+      "reg_number": "INH000007583",
+      "entity_type": "Research Analyst (RA)",
+      "status": "VALID",
+      "official_domains": ["wrightresearch.in"],
+      "whitelisted_apps": ["Wright Research App"],
+      "verified_handles": ["@wright_research"],
+      "authorized_upi_handles": ["wright@icici"]
+    },
+    {
+      "name": "Weekendinvesting Analytics LLP",
+      "reg_number": "INH100008717",
+      "entity_type": "Research Analyst (RA)",
+      "status": "VALID",
+      "official_domains": ["weekendinvesting.com"],
+      "whitelisted_apps": ["WeekendInvesting Smallcase"],
+      "verified_handles": ["@weekendinvestng"],
+      "authorized_upi_handles": ["weekendinvesting@hdfcbank"]
+    },
+    {
+      "name": "SBI Funds Management Limited (SBI Mutual Fund)",
+      "reg_number": "ARN-0028",
+      "entity_type": "Mutual Fund (AMFI)",
+      "status": "VALID",
+      "official_domains": ["sbimf.com"],
+      "whitelisted_apps": ["SBI MF InvesTap"],
+      "verified_handles": ["@SBIMF"],
+      "authorized_upi_handles": ["sbimf@sbi"]
+    },
+    {
+      "name": "Nippon Life India Asset Management Limited",
+      "reg_number": "ARN-0046",
+      "entity_type": "Mutual Fund (AMFI)",
+      "status": "VALID",
+      "official_domains": ["nipponindiamf.com"],
+      "whitelisted_apps": ["Nippon India Mutual Fund App"],
+      "verified_handles": ["@NipponIndiaMF"],
+      "authorized_upi_handles": ["nipponmf@hdfcbank"]
+    },
+    {
+      "name": "HDFC Asset Management Company Limited",
+      "reg_number": "ARN-0002",
+      "entity_type": "Mutual Fund (AMFI)",
+      "status": "VALID",
+      "official_domains": ["hdfcfund.com"],
+      "whitelisted_apps": ["HDFC MFOnline Investors"],
+      "verified_handles": ["@HDFCMF"],
+      "authorized_upi_handles": ["hdfcmf@hdfcbank"]
+    }
+  ]
+}

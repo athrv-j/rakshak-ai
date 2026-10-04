@@ -1,0 +1,43 @@
+{
+  "ontology": "Entity Types & Validation Regexes",
+  "version": "1.1.0",
+  "entity_types": [
+    {
+      "type": "upi_id",
+      "regex": "[a-zA-Z0-9.\\-_]{2,256}@[a-zA-Z]{2,64}",
+      "risk_indicators": {
+        "individual_handles": ["@okaxis", "@okhdfcbank", "@okicici", "@ybl", "@paytm", "@ibl", "@axl"],
+        "suspicious_patterns": ["fake", "invest", "crypto", "profit", "earn", "trade", "vip"],
+        "regulatory_rule": "Brokers must NEVER collect client funds via personal UPI IDs or PSP consumer handles."
+      }
+    },
+    {
+      "type": "sebi_reg_number",
+      "valid_prefixes": ["INZ", "INA", "INH", "ARN-", "INP", "INF"],
+      "regex": "(INZ|INA|INH|INP|INF)[0-9]{8,9}|ARN-[0-9]{4,7}",
+      "verification_endpoint": "https://www.sebi.gov.in/sebiweb/other/OtherAction.do?doRecognised=yes"
+    },
+    {
+      "type": "phone_number",
+      "regex": "(?:\\+91[\\-\\s]?)?[6-9]\\d{9}",
+      "risk_indicators": {
+        "voip_virtual_numbers": ["+9160", "+9199"],
+        "suspicious_channels": ["WhatsApp Business unverified", "Telegram direct message"]
+      }
+    },
+    {
+      "type": "domain",
+      "regex": "(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,}",
+      "risk_tlds": [".vip", ".top", ".xyz", ".club", ".app", ".buzz", ".cc", ".link"],
+      "brand_squatting_keywords": ["zerodha", "groww", "angelone", "upstox", "sebi", "nse", "bse"]
+    },
+    {
+      "type": "apk_package",
+      "regex": "[a-zA-Z0-9_]+(?:\\.[a-zA-Z0-9_]+)+",
+      "risk_indicators": {
+        "sideloaded": true,
+        "missing_play_store_signature": true
+      }
+    }
+  ]
+}

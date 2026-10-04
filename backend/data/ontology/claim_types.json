@@ -1,0 +1,88 @@
+{
+  "ontology": "Claim Types & Regulatory Risk Mapping",
+  "statutory_frameworks": [
+    "SEBI (Prohibition of Fraudulent and Unfair Trade Practices - PFUTP) Regulations, 2003",
+    "SEBI (Research Analysts) Regulations, 2014",
+    "SEBI (Investment Advisers) Regulations, 2013",
+    "Section 12A of SEBI Act, 1992"
+  ],
+  "claim_types": [
+    {
+      "type": "guaranteed_return",
+      "risk_level": "CRITICAL",
+      "severity_score": 95,
+      "statutory_violation": "PFUTP Reg 4(2)(k) - Guaranteeing market returns is strictly illegal for any SEBI intermediary",
+      "typical_phrasing": [
+        "100% guaranteed profit",
+        "fixed 20% weekly return",
+        "zero loss daily strategy",
+        "गारंटीड रिटर्न"
+      ]
+    },
+    {
+      "type": "regulator_approved_scheme",
+      "risk_level": "CRITICAL",
+      "severity_score": 90,
+      "statutory_violation": "Misrepresentation of SEBI/RBI endorsement. Regulators do not endorse or guarantee specific schemes.",
+      "typical_phrasing": [
+        "SEBI approved trading bot",
+        "RBI certified high-yield pool",
+        "Government of India approved share scheme"
+      ]
+    },
+    {
+      "type": "insider_institutional_access",
+      "risk_level": "CRITICAL",
+      "severity_score": 90,
+      "statutory_violation": "SEBI (Prohibition of Insider Trading) Regulations, 2015 & Section 12A(e) of SEBI Act",
+      "typical_phrasing": [
+        "institutional block allocation",
+        "pre-IPO confirmed allotment",
+        "confidential operator call"
+      ]
+    },
+    {
+      "type": "advance_clearance_fee",
+      "risk_level": "CRITICAL",
+      "severity_score": 100,
+      "statutory_violation": "Extortionate withdrawal block. Regulated entities deduct taxes at source (TDS) or exchange STT automatically.",
+      "typical_phrasing": [
+        "pay 20% tax before withdrawal",
+        "SEBI release fee required",
+        "anti-money laundering clearance deposit"
+      ]
+    },
+    {
+      "type": "artificial_urgency_scarcity",
+      "risk_level": "HIGH",
+      "severity_score": 75,
+      "statutory_violation": "Coercive high-pressure sales tactic prohibited under Code of Conduct for Intermediaries",
+      "typical_phrasing": [
+        "only 3 slots left",
+        "offer valid till 12 PM today",
+        "VIP link expires in 10 minutes"
+      ]
+    },
+    {
+      "type": "authority_impersonation",
+      "risk_level": "CRITICAL",
+      "severity_score": 95,
+      "statutory_violation": "Fraudulent misrepresentation under Section 12A(c) and identity theft under IT Act 2000 Section 66D",
+      "typical_phrasing": [
+        "Official Zerodha VIP desk",
+        "HDFC Securities institutional wing",
+        "SEBI Cyber Officer"
+      ]
+    },
+    {
+      "type": "mlm_referral_bonus",
+      "risk_level": "HIGH",
+      "severity_score": 80,
+      "statutory_violation": "Prize Chits and Money Circulation Schemes (Banning) Act, 1978",
+      "typical_phrasing": [
+        "refer 3 friends and get ₹5,000 cash",
+        "earn 10% lifetime commission on downline investments"
+      ]
+    }
+  ]
+}

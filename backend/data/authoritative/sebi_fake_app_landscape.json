@@ -1,0 +1,78 @@
+{
+  "document_title": "Fake Trading App Scam Landscape",
+  "issuing_authority": "Securities and Exchange Board of India (SEBI)",
+  "reference_url": "https://investor.sebi.gov.in/pdf/Fake%20trading%20app%20scam%20Landscape.pdf",
+  "mandate_context": "SEBI Investor Education & Protection Advisory against Unregistered Digital Trading Platforms",
+  "attack_phases": [
+    {
+      "phase_number": 1,
+      "name": "Social Media Hook",
+      "vector": ["Instagram Reels", "YouTube Shorts", "Facebook Ads", "Sponsored Telegram links"],
+      "tactics": [
+        "Flaunting luxury lifestyle (sports cars, luxury watches, cash stacks)",
+        "Deepfake synthetic endorsements of respected business figures (e.g. Narayana Murthy, Mukesh Ambani)",
+        "Zero-loss algorithmic bot claims",
+        "Invitation to private VIP / Institutional trading channels"
+      ]
+    },
+    {
+      "phase_number": 2,
+      "name": "Trust Grooming & Authority Camouflage",
+      "vector": ["WhatsApp / Telegram Groups", "Direct Messaging"],
+      "tactics": [
+        "Forging official SEBI RIA/RA registration certificates with manipulated names",
+        "Cloning identities and brand logos of top registered brokers (e.g., Zerodha, ICICI Direct)",
+        "Displaying fake corporate CIN / MCA incorporation records",
+        "Shill community members (bots / accomplices) thanking administrators for massive gains"
+      ]
+    },
+    {
+      "phase_number": 3,
+      "name": "The Unregistered App Trap",
+      "vector": ["Third-party APK files", "Unlisted TestFlight links", "Phishing Web Portals"],
+      "tactics": [
+        "Instructing victims to bypass Google Play Protect or Apple App Store restrictions",
+        "Routing initial deposits into personal UPI handles (@okaxis, @ybl, @paytm) or mule current accounts",
+        "Absence of SEBI/NSE/BSE exchange trade confirmation SMS or UCC verification"
+      ]
+    },
+    {
+      "phase_number": 4,
+      "name": "Simulated Virtual Profits & Dopamine Loop",
+      "vector": ["Manipulated Client App Interface"],
+      "tactics": [
+        "Simulating massive 500% to 1000% gains on fictitious trading dashboards",
+        "Permitting a token micro-withdrawal (e.g., ₹1,000 to ₹5,000) to build total trust",
+        "Coaching victim to liquidate mutual funds, provident funds, or take personal loans"
+      ]
+    },
+    {
+      "phase_number": 5,
+      "name": "Extortion, Withdrawal Freeze & Exit",
+      "vector": ["VIP Admin Hostage Demands"],
+      "tactics": [
+        "Demanding upfront 'Capital Gains Tax' or 'SEBI Clearance Fee' (typically 20-30%)",
+        "Threatening legal prosecution or freezing of PAN card if payment is withheld",
+        "Deleting the Telegram group, changing UPI handles, and re-approaching victim as a 'cyber recovery agent'"
+      ]
+    }
+  ],
+  "sebi_prescribed_countermeasures": [
+    {
+      "feature": "SEBI Check / Intermediary Verification",
+      "action": "Always cross-verify intermediary registration number (INZ/INA/INH) on sebi.gov.in before any transaction."
+    },
+    {
+      "feature": "Validated UPI Handles & Broker Escrows",
+      "action": "Brokers are legally prohibited from collecting investor funds in personal UPI IDs or unrelated bank accounts."
+    },
+    {
+      "feature": "Official App Store Whitelisting",
+      "action": "Never install .apk packages shared via chat apps; only trade through verified developer listings on official app stores."
+    },
+    {
+      "feature": "Exchange Settlement Confirmation",
+      "action": "Ensure all executed trades trigger official daily SMS/email confirmations directly from NSE, BSE, or CDSL/NSDL."
+    }
+  ]
+}
