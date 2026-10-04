@@ -350,7 +350,8 @@ def get_share_info(result_id: str):
         f"Check it yourself: http://localhost:5173/result/{result_id}\n"
         f"Stay safe from financial scams!"
     )
-    whatsapp_url = f"https://wa.me/?text={whatsapp_text.replace(' ', '%20').replace('\n', '%0A')}"
+    encoded_wa = urllib.parse.quote(whatsapp_text)
+    whatsapp_url = f"https://wa.me/?text={encoded_wa}"
     return {
         "result_id": result_id,
         "risk": risk,
